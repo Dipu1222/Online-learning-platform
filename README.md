@@ -15,7 +15,7 @@ This project demonstrates the complete **front-end design and interaction flow**
 
 ## 🌐 Repository
 
-Hosted on **GitHub**: https://github.com/Dipu1222/Online-learning-platform
+Hosted on **GitHub**: [https://github.com/Dipu1222/Online-learning-platform](https://dipu1222.github.io/Online-learning-platform/)
 
 ---
 
