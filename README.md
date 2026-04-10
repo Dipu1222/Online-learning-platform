@@ -54,7 +54,7 @@ You can deploy this project using GitHub Pages to see it live.
 > Add screenshots of your project and replace the image paths below.
 
 ### 🏠 Home Page
-![Home Screenshot](images/screenshot-home.png)
+<img width="1917" height="992" alt="Screenshot 2026-04-10 132753" src="https://github.com/user-attachments/assets/60aff7bb-406c-4c4d-ac2e-c87ee96e4a2f" />
 
 ### 📚 Courses Section
 ![Courses Screenshot](images/screenshot-courses.png)
@@ -62,6 +62,5 @@ You can deploy this project using GitHub Pages to see it live.
 ### 🔐 Login Modal
 ![Login Screenshot](images/screenshot-login.png)
 
----
 
-## 📂 Project Structure
+
