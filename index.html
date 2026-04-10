@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <!--
+        NAVIGATION
+    -->
+    <header class="nav-scroll fixed-top mh-xss-mobile-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo1.png" alt="">
+                </a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#books">Books <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#course">Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#others">Others</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-btn" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                        </li>                            
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--
+    ==============
+        HOME 
+    ==============
+    -->
+    <section class="header-section d-flex align-items-center" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="header-details">
+                        <h6>Are you ready to Learn?</h6>
+                        <h1>Learn With fun <br> on <span>any schedule</span></h1>
+                        <p>Expand your knowledge with our comprehensive online courses. Learn at your own pace from industry experts and take your skills to the next level.</p>
+                        <button class="get-btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 ml-auto">
+                    <div class="header-image">
+                        <img src="images/picture/header-image.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!--
+==============
+    Blog 
+==============
+-->  
+<section class="blog-section sec-padding" id="blog">
+    <div class="container">
+        <h2 class="text-center title-text">Latest Blog Posts</h2>
+        <div class="row" id="blogPosts">
+            <!-- Blog posts will be loaded here -->
+        </div>
+        <div class="text-center mt-5">
+           <a href="https://dev.to/steal/top-programming-blogs-to-read-in-2024-3hf2" target="_blank">
+        <button class="get-btn" id="loadMore">Load More</button>
+    </a>
+        </div>
+    </div>
+</section>
+
+ 
+
+<!-- Blog Modal -->
+<div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="blogModalTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="blogModalImage" src="" class="img-fluid mb-4" alt="Blog post image">
+                <div id="blogModalContent"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--
+    ==============
+        Cards 
+    ==============
+    -->  
+    <section class="cards-section sec-padding" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/book.png" alt="" class="img-fluid">
+                        <h5>1500+ Topic</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/students-icon-2.png" alt="" class="img-fluid">
+                        <h5>1800+ Students</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/paper.png" alt="" class="img-fluid">
+                        <h5>9K+ Test Token</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src="images/icon/student-icon.png" alt="" class="img-fluid">
+                        <h5>2000+ Student</h5>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>                                                
+            </div>
+        </div>
+    </section> 
+    <!--
+    ==============
+        Course 
+    ==============
+    -->  
+    <section class="course-section sec-padding" id="course">      
+        <div class="container">
+            <h2 class="text-center title-text">Online Courses</h2>
+            <div class="card-deck">
+                
+                
+            </div>
+        </div>
+    </section> 
+    <!--
+    ==============
+        Video 
+    ==============
+    -->  
+    <section class="video-section sec-padding" id="others">      
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="video-details">
+                        <h2>Helping people grow their careers, every day!</h2>
+                        <p>Our platform offers high-quality courses taught by industry professionals. Whether you're looking to advance in your current role or switch careers entirely, we have the resources to help you succeed. Join thousands of satisfied students who have transformed their lives through learning.</p>
+                        <a href="#course"><button class="get-btn" >Start Learning</button> </a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 ml-auto">
+                    <div class="video-image">
+                        <img src="images/picture/stuednt-video.jpg" alt="" class="img-fluid">
+                        <a href="https://www.youtube.com/embed/b6FdqRrrMlQ" target="_blank">
+                            <div class="video-icon">
+                                <img src="images/icon/play.png" alt="">
+                            </div>                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>       
+    <!--
+    ==============
+        Testimonial 
+    ==============
+    -->  
+    <section class="testimonial-section sec-padding">      
+        <div class="container">
+            <h2 class="text-center title-text">Testimonial</h2>  
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <div class="testimonial-inner d-lg-flex justify-content-between">
+                        <img src="images/picture/man.png" alt="" class="img-fluid">
+                        <p>This platform completely changed my career trajectory. The courses are well-structured, the instructors are knowledgeable, and the community is supportive. I went from complete beginner to landing my dream job in just six months!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!--
+    ==============
+        Subscribe 
+    ==============
+    -->  
+    <section class="subscribe-section" id="subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-9 mx-auto">
+                <div class="subscribe-inner text-center">
+                    <h2>Do you want to be an instructor?</h2>
+                    <button class="get-btn" data-toggle="modal" data-target="#instructorModal">Join With Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>   
+<!-- Add Instructor Application Modal -->
+<div class="modal fade" id="instructorModal" tabindex="-1" aria-labelledby="instructorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="instructorModalLabel">Become an Instructor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="instructorForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="instructorFirstName">First Name</label>
+                            <input type="text" class="form-control" id="instructorFirstName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="instructorLastName">Last Name</label>
+                            <input type="text" class="form-control" id="instructorLastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="instructorEmail">Email Address</label>
+                        <input type="email" class="form-control" id="instructorEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="instructorExperience">Teaching Experience (years)</label>
+                        <input type="number" class="form-control" id="instructorExperience" min="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="instructorExpertise">Area of Expertise</label>
+                        <select class="form-control" id="instructorExpertise" required>
+                            <option value="">Select Expertise</option>
+                            <option>Programming</option>
+                            <option>Data Science</option>
+                            <option>Web Development</option>
+                            <option>Machine Learning</option>
+                            <option>Database Systems</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="instructorLinkedin">LinkedIn Profile</label>
+                        <input type="url" class="form-control" id="instructorLinkedin" 
+                               placeholder="https://linkedin.com/in/yourprofile" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="instructorResume">Upload Resume (PDF only)</label>
+                        <input type="file" class="form-control-file" id="instructorResume" accept=".pdf" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="instructorMessage">Why do you want to teach with us?</label>
+                        <textarea class="form-control" id="instructorMessage" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agreeTermsInstructor" required>
+                        <label class="form-check-label" for="agreeTermsInstructor">
+                            I agree to the <a href="#" data-toggle="modal" data-target="#termsModal">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Terms Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="termsModalLabel">Instructor Terms</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5>Instructor Agreement</h5>
+                <ol>
+                    <li>You retain ownership of content you create</li>
+                    <li>We handle marketing and student enrollment</li>
+                    <li>Revenue share of 70/30 in your favor</li>
+                    <li>Monthly payment processing</li>
+                    <li>Quality standards must be maintained</li>
+                </ol>
+                <p>By submitting your application, you agree to these terms.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--
+    ==============
+        Footer 
+    ==============
+    -->  
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-p">
+                        <p>Millions of people of all ages and from around
+                            the world are improving their lives with us</p>
+                    </div>
+                </div>
+                <div class="col-md-7 ml-auto">
+                    <div class="footer-inner d-flex justify-content-between">
+                        <div class="footer-list-item">
+                            <ul class="list-unstyled">
+                                <li>Course</li>
+                                <li><a href="#">Graphic Design</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Engineering</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list-item">
+                            <ul class="list-unstyled">
+                                <li>Terms</li>
+                                <li><a href="#">Graphic Design</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Engineering</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list-item">
+                            <ul class="list-unstyled">
+                                <li>Useful Links</li>
+                                <li><a href="#">Graphic Design</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Engineering</a></li>
+                            </ul>
+                        </div>  
+                    </div>                                      
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="loginEmail">Email address</label>
+                <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            <div class="text-center mt-3">
+              <p>Don't have an account? <a href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign up</a></p>
+              <p><a href="#" id="forgotPassword">Forgot password?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Create New Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="signupForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="signupEmail">Email address</label>
+                <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                <label class="form-check-label" for="agreeTerms">I agree to the <a href="#">Terms and Conditions</a></label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </form>
+            <div class="text-center mt-3">
+              <p>Already have an account? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="forgotPasswordModalLabel">Reset Password</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="forgotPasswordForm">
+              <div class="form-group">
+                <label for="resetEmail">Email address</label>
+                <input type="email" class="form-control" id="resetEmail" aria-describedby="emailHelp" placeholder="Enter your email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll send you a link to reset your password.</small>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Reset Link</button>
+            </form>
+            <div class="text-center mt-3">
+              <p>Remember your password? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Course Details Modal -->
+<div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailsModalLabel">Course Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="detailsImage" src="" class="img-fluid mb-3" alt="Course Image">
+          </div>
+          <div class="col-md-6">
+            <h3 id="detailsTitle"></h3>
+            <p id="detailsDescription" class="lead"></p>
+            <ul class="list-unstyled">
+              <li><strong>Instructor:</strong> <span id="detailsInstructor"></span></li>
+              <li><strong>Start Date:</strong> <span id="detailsStartDate"></span></li>
+              <li><strong>Duration:</strong> <span id="detailsDuration"></span></li>
+              <li><strong>Price:</strong> $<span id="detailsPrice"></span></li>
+              <li><strong>Seats Available:</strong> <span id="detailsSeats"></span></li>
+            </ul>
+            <button class="btn btn-primary btn-block" id="enrollFromDetails">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Checkout Modal -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="checkoutModalLabel">Enroll in <span id="courseTitle"></span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="courseImage" src="" class="img-fluid mb-3" alt="Course Image">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Course Summary</h5>
+                <p id="courseDescription"></p>
+                <ul class="list-unstyled">
+                  <li><strong>Start Date:</strong> <span id="courseStartDate"></span></li>
+                  <li><strong>Seats Available:</strong> <span id="courseSeats"></span></li>
+                  <li><strong>Price:</strong> $<span id="coursePrice"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form id="checkoutForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="4242 4242 4242 4242" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="expiryDate">Expiry Date</label>
+                  <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="cvc">CVC</label>
+                  <input type="text" class="form-control" id="cvc" placeholder="123" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Complete Enrollment ($<span id="totalPrice"></span>)
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   
+    <script src="script.js"></script>
+</body>
+</html>
